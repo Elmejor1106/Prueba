@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Equipos de Cómputo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Registro de Equipos de Cómputo</h2>
+
+<form>
+  <label for="codigo">Código del Equipo:</label>
+  <input type="text" id="codigo" name="codigo" value="EQP-2025-001" readonly>
+
+  <label for="marca">Marca:</label>
+  <input type="text" id="marca" name="marca" value="HP">
+
+  <label for="modelo">Modelo:</label>
+  <input type="text" id="modelo" name="modelo" value="EliteBook 840 G6">
+
+  <label for="procesador">Procesador:</label>
+  <input type="text" id="procesador" name="procesador" value="Intel Core i5-8365U">
+
+  <label for="ram">Memoria RAM:</label>
+  <input type="text" id="ram" name="ram" value="16 GB DDR4">
+
+  <label for="disco">Disco Duro / SSD:</label>
+  <input type="text" id="disco" name="disco" value="512 GB SSD">
+
+  <label for="so">Sistema Operativo:</label>
+  <input type="text" id="so" name="so" value="Windows 11 Pro">
+
+  <label for="estado">Estado del Equipo:</label>
+  <select id="estado" name="estado">
+    <option selected>Operativo</option>
+    <option>No operativo</option>
+    <option>En mantenimiento</option>
+  </select>
+
+  <label for="ubicacion">Ubicación:</label>
+  <input type="text" id="ubicacion" name="ubicacion" value="Oficina de Sistemas - Piso 2">
+
+  <label for="responsable">Responsable:</label>
+  <input type="text" id="responsable" name="responsable" value="Laura Rodríguez">
+
+  <label for="observaciones">Observaciones:</label>
+  <textarea id="observaciones" name="observaciones">Equipo actualizado con últimos parches de seguridad.</textarea>
+
+  <button type="submit">Registrar Equipo</button>
+</form>
+
+</body>
+</html>
